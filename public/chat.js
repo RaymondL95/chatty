@@ -11,7 +11,7 @@ var message = document.getElementById('message'),
 console.log(handle.placeholder);
 
 btn.addEventListener('click',function(){
-	if(message.value !== ""){
+	if(message.value !== "" && handle.placeholder !== 'Username'){
 		socket.emit('chat', {
 			message: message.value,
 			handle: handle.placeholder

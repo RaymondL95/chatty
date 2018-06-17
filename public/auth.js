@@ -40,10 +40,10 @@ function checkLoginState() {
 function showHide(isLoggedIn){
   if(isLoggedIn){
     document.getElementById('chat-app').style.display = 'block';
-    document.getElementById('header').style.display = 'none';
+    document.getElementById('head').style.display = 'none';
   }else{
     document.getElementById('chat-app').style.display = 'none';
-    document.getElementById('header').style.display = 'block';
+    document.getElementById('head').style.display = 'block';
   }
 }
 
