@@ -8,6 +8,9 @@ var server= app.listen(4000,function(){
 
 app.use(express.static('public'));
 
+app.get('*', (req,res) =>{
+	res.sendFile(path.resolve(__dirname, 'public/index.html'))
+});
 var io = socket(server);
 
 io.on('connection', function(socket){
