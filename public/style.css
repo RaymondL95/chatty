@@ -1,0 +1,81 @@
+/* VARIABLES */
+* {
+  box-sizing: border-box; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  margin: 0;
+  overflow-x: hidden; }
+
+#login {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -25px; }
+
+#login p {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 48px;
+  color: white; }
+
+#login #fb-btn {
+  padding-left: 20px; }
+
+#chat-app {
+  max-width: 600px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 2px; }
+
+#chat-app #chat-window {
+  height: 400px;
+  overflow: auto;
+  background: #f9f9f9; }
+
+#chat-app #chat-window #output p {
+  padding: 14px 0px;
+  margin: 0 20px;
+  border-bottom: 1px solid #e9e9e9;
+  color: #00F; }
+
+#chat-app #chat-window #output strong {
+  color: #00F; }
+
+#chat-app #chat-window #feedback p {
+  color: #aaa;
+  padding: 14px 0px;
+  margin: 0 20px; }
+
+#chat-app #identity i {
+  width: 100%;
+  display: inline-block;
+  color: red;
+  font-size: 20px;
+  float: right; }
+
+#chat-app input {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background: #eee;
+  border: 0;
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px; }
+
+#chat-app button {
+  background: #575ed8;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 0 0 2px 2px; }

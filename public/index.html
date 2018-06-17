@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport content="width=device-width, initial-scale=1.0">
+	<title>Chatty</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<!-- Auth Goes Here -->
+<script type="text/javascript" src="/auth.js"></script>
+	<header id="header" class="v-header container"> 
+		<div class="fullscreen-video-wrap">
+			<video id="vid" src="phone.mov" muted autoplay="true" loop="true"></video>
+		</div>
+		<div id="login">
+		<p>Chatty</p>
+			<fb:login-button id="fb-btn"
+			  scope="public_profile,email"
+			  onlogin="checkLoginState();">
+			</fb:login-button>
+		</div>
+	</header>
+	<div id="chat-app">
+		<div id="chat-window">
+			<div id="output"></div>
+			<div id="feedback"></div>
+		</div>
+		<div id="identity">
+			<i id="logout" class="fas fa-sign-out-alt" onclick="logout()"></i>
+			<input type="text" id="handle" name="" placeholder="Username" readonly>
+		</div>
+		<input type="text" id="message" placeholder="Message" name="">
+		<button id="send">Send</button>
+	</div>
+	<script type="text/javascript" src="/chat.js"></script>
+</body>
+</html>
