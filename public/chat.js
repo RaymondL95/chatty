@@ -1,4 +1,4 @@
-var socket = io.connect('https://chatty-heroku.herokuapp.com/');
+var socket = io.connect('process.env.PORT');
 
 //Query DOM
 
